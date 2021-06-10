@@ -93,6 +93,19 @@ h2 {
   .about__content--skills-box h4 {
     text-align: center; }
 
+.projects h2 {
+  text-shadow: 2px 2px 8px #b1aeae; }
+
+.projects h5 {
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem; }
+
+.projects hr {
+  box-shadow: 0 2px 6px #b1aeae; }
+
 /* btns */
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -157,6 +170,70 @@ h2 {
       color: #fff; }
   .header-social li:hover {
     transform: scale(1.1); }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 25rem;
+  width: 30%;
+  position: relative; }
+  .card__side {
+    height: 25rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.6s ease-in; }
+    .card__side--front, .card__side--back {
+      box-shadow: 0 4px 15px #b1aeae; }
+    .card__side--front {
+      background-color: transparent; }
+    .card__side--back {
+      background-image: linear-gradient(to right bottom, rgba(36, 34, 34, 0.751), rgba(94, 91, 91, 0.751));
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__image {
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .card__image--1 {
+      background-image: url("../img/foodmap.png"); }
+    .card__image--2 {
+      background-image: url("../img/Quiz-app.png"); }
+    .card__image--3 {
+      background-image: url("../img/portfolio.png"); }
+
+.card__features-showcase {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%; }
+  .card__features-showcase li {
+    width: 18%;
+    margin-left: 0.2rem; }
+  .card__features-showcase--photo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    margin: 0; }
+    .card__features-showcase--photo img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: auto; }
 
 .header {
   height: 100vh;
@@ -231,6 +308,11 @@ h2 {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   padding: 0.2rem; }
+  .projects__container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }

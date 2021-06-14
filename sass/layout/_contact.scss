@@ -1,0 +1,104 @@
+.contact {
+    height: 100vh;
+    width: 100vw;
+    padding: 0.2rem;
+
+    &__title {
+        color: #000;
+    }
+
+    hr {
+        margin-bottom: 3rem;
+    }
+
+    &__content {
+        height: 70%;
+        width: 70%;
+        margin: 0 auto;
+        background-color: rgba(241, 243, 245, 0.8);
+        border-radius: 3px;
+        box-shadow: 0 2.5rem 5rem $color-dark-white;
+
+        &-form {
+            width: 60%;
+            height: 80%;
+            margin: 0 auto;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: space-evenly;
+                padding: 4rem;
+
+                position: relative;
+                margin: 1rem 0 2rem;
+
+                label {
+                    position: absolute;
+                    left: 4.8rem;
+                    color: $color-black;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+
+                    &:first-of-type {
+                        top: 4.7rem;
+                        margin-bottom: 3rem;
+                    }
+
+                    &:last-of-type {
+                        top: 9.9rem;
+                        margin-bottom: 3rem;
+                    }
+                }
+
+
+                input:not(:last-child),
+                textarea {
+                    background-color: transparent;
+                    border: 0;
+                    border-bottom: 1px solid $color-dark-white;
+                    display: block;
+                    padding: 0.8rem;
+                    margin-bottom: 2rem;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    font-family: inherit;
+                }
+
+                input:not(:last-child):focus,
+                input:not(:last-child):valid,
+                textarea:focus,
+                textarea:valid {
+                    outline: 0;
+                }
+
+                input:last-child {
+                    background-color: rgb(113, 209, 100);
+                    color: rgb(61, 58, 58);
+                    margin-top: 3rem;
+                    width: 30%;
+                    padding: 0.7rem 1rem;
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow: 0 4px 8px $color-dark-white;
+                    letter-spacing: 0.1rem;
+                    transition: all 0.2s ease-in;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 0 6px 10px $color-dark-white;
+                    }
+
+                    &:active {
+                        transform: scale(1.02);
+                        box-shadow: 0 4px 8px $color-dark-white;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}

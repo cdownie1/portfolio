@@ -19,6 +19,7 @@
         &--front,
         &--back {
             box-shadow: 0 4px 15px $color-dark-white;
+            padding: 1rem;
         }
 
         &--front {
@@ -32,15 +33,21 @@
                     rgba(36, 34, 34, 0.751),
                     rgba(94, 91, 91, 0.751));
             transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
     }
 
     &:hover &__side--front {
-        transform: rotateY(-180deg);
+        transform: rotateY(-180deg) scale(1.15);
+        box-shadow: 0 10px 30px $color-dark-white;
+
     }
 
     &:hover &__side--back {
-        transform: rotateY(0);
+        transform: rotateY(0) scale(1.15);
+        box-shadow: 0 10px 30px $color-dark-white;
     }
 
     //   CARD FRONT
@@ -62,10 +69,28 @@
             background-image: url('../img/portfolio.png');
         }
     }
+
+    //   CARD BACK
+    &__key-features {
+        margin: 0 auto;
+
+        ul {
+            list-style: none;
+            text-align: center;
+
+            li {
+                font-size: 0.8rem;
+                padding: .35rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+
 }
 
 .card__features-showcase {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: row;

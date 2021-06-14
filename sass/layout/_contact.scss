@@ -17,7 +17,7 @@
         margin: 0 auto;
         background-color: rgba(241, 243, 245, 0.8);
         border-radius: 3px;
-        box-shadow: 0 2.5rem 5rem $color-dark-white;
+        box-shadow: 0 2rem 4rem $color-dark-white;
 
         &-form {
             width: 60%;
@@ -50,20 +50,43 @@
                         top: 9.9rem;
                         margin-bottom: 3rem;
                     }
+
+                    span {
+                        display: inline-block;
+                        min-width: 0.5rem;
+                        transition: all 0.3s ease-in-out;
+                    }
                 }
 
+                input:focus+label span,
+                input:valid+label span,
+                textarea:focus+label span {
+                    color: rgb(42, 64, 109);
+                    transform: translateY(-2.3rem);
+                }
 
                 input:not(:last-child),
                 textarea {
                     background-color: transparent;
-                    border: 0;
-                    border-bottom: 1px solid $color-dark-white;
                     display: block;
                     padding: 0.8rem;
                     margin-bottom: 2rem;
                     font-size: 1.2rem;
                     font-weight: 300;
                     font-family: inherit;
+                }
+
+                textarea {
+                    border: 1px solid $color-dark-white;
+                    border-radius: 3px;
+                    width: 100%;
+                    height: 25vh;
+                }
+
+                input:not(:last-child) {
+
+                    border: 0;
+                    border-bottom: 1px solid $color-dark-white;
                 }
 
                 input:not(:last-child):focus,
@@ -73,9 +96,19 @@
                     outline: 0;
                 }
 
+                input:not(:last-child):focus,
+                input:not(:last-child):valid {
+                    border-bottom: 2px solid rgb(93, 103, 121);
+                }
+
+                textarea:focus {
+                    border: 2px solid rgb(93, 103, 121);
+                }
+
                 input:last-child {
-                    background-color: rgb(113, 209, 100);
-                    color: rgb(61, 58, 58);
+                    margin: 0 auto;
+                    background-color: rgb(93, 103, 121);
+                    color: $color-white;
                     margin-top: 3rem;
                     width: 30%;
                     padding: 0.7rem 1rem;
@@ -95,8 +128,6 @@
                         box-shadow: 0 4px 8px $color-dark-white;
                     }
                 }
-
-
             }
         }
     }

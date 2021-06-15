@@ -1,0 +1,63 @@
+.footer {
+    background-color: rgb(43, 40, 40);
+    height: 25vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; //X
+    justify-content: space-around; //Y
+
+    &__logo-box {}
+
+
+    &__content {
+        width: 80%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        &-nav {
+            margin-right: 20%;
+        }
+
+        &-nav,
+        &-copy {
+            width: 40%;
+            font-size: 1rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        text-transform: uppercase;
+        justify-self: right;
+
+    }
+
+    &__item {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    &__link {
+        transition: all 0.2s ease;
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-white;
+        }
+
+        &:hover,
+        &:active {
+            text-shadow: 2px 8px 10px $color-dark-white;
+            font-size: 1.1rem;
+        }
+    }
+
+    &-copy {
+        margin-right: auto;
+    }
+
+}

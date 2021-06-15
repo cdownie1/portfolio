@@ -492,6 +492,7 @@
               action="POST"
               data-netlify="true"
               netlify-honeypot="bot-check"
+              data-netlify-recaptcha="true"
               class="form"
             >
               <p class="hidden">
@@ -504,6 +505,8 @@
 
               <textarea id="message" name="message" required></textarea>
               <label for="message">message</label>
+
+              <div data-netlify-recaptcha="true"></div>
 
               <input type="submit" value="SEND" />
             </form>

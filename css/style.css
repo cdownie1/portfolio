@@ -496,10 +496,105 @@ h2 {
   .footer__link {
     transition: all 0.2s ease; }
     .footer__link:link, .footer__link:visited {
+      display: inline-block;
       text-decoration: none;
       color: #fff; }
     .footer__link:hover, .footer__link:active {
       text-shadow: 2px 8px 10px #b1aeae;
-      font-size: 1.1rem; }
+      transform: scale(1.2); }
   .footer-copy {
     margin-right: auto; }
+
+.nav__checkbox {
+  display: none; }
+
+.nav__checkbox:checked ~ .nav__overlay {
+  transform: scale(100); }
+
+.nav__checkbox:checked ~ .nav__main {
+  opacity: 1;
+  width: 100vw; }
+
+.nav__checkbox:checked + .nav__btn .nav__icon {
+  background-color: transparent; }
+  .nav__checkbox:checked + .nav__btn .nav__icon::after, .nav__checkbox:checked + .nav__btn .nav__icon::before {
+    top: 0; }
+  .nav__checkbox:checked + .nav__btn .nav__icon::after {
+    transform: rotate(405deg); }
+  .nav__checkbox:checked + .nav__btn .nav__icon::before {
+    transform: rotate(-405deg); }
+
+.nav__icon {
+  position: relative;
+  margin-top: 2.5rem; }
+  .nav__icon, .nav__icon::before, .nav__icon::after {
+    display: inline-block;
+    width: 2rem;
+    height: 2px;
+    background-color: #0d0e0e; }
+  .nav__icon::before, .nav__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all 0.4s ease-in; }
+  .nav__icon::before {
+    top: -0.5rem; }
+  .nav__icon::after {
+    top: 0.5rem; }
+
+.nav__btn {
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #0d0e0e;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 3rem #b1aeae;
+  z-index: 1001; }
+
+.nav__overlay {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background-image: radial-gradient(rgba(34, 30, 30, 0.95), rgba(12, 5, 5, 0.95));
+  z-index: 999;
+  transition: transform 0.7s ease-in; }
+
+.nav__main {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 0;
+  width: 0;
+  transition: all 0.7s ease-in-out; }
+  .nav__main-list {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    list-style: none;
+    text-align: center; }
+  .nav__main-item {
+    margin: 1rem; }
+  .nav__main-link {
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in; }
+    .nav__main-link:link, .nav__main-link:visited {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 3rem;
+      font-weight: 200;
+      color: #fff;
+      text-transform: uppercase; }
+    .nav__main-link:hover, .nav__main-link:active {
+      text-shadow: 0 0.6rem 1rem #b1aeae;
+      transform: scale(1.2); }

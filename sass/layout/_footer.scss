@@ -45,6 +45,7 @@
 
         &:link,
         &:visited {
+            display: inline-block;
             text-decoration: none;
             color: $color-white;
         }
@@ -52,7 +53,7 @@
         &:hover,
         &:active {
             text-shadow: 2px 8px 10px $color-dark-white;
-            font-size: 1.1rem;
+            transform: scale(1.2);
         }
     }
 

@@ -18,6 +18,30 @@
   }
 }
 
+.contact-btn {
+
+  &:link,
+  &:visited {
+    display: inline-block;
+    background-color: rgb(93, 103, 121);
+    color: $color-white;
+    border-radius: 3px;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px $color-dark-white;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px $color-dark-white;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px $color-dark-white;
+  }
+}
+
 
 
 .btn-header,
@@ -33,16 +57,6 @@
     border-radius: 3px;
     transition: all 0.2s ease-in;
   }
-
-  // &:hover {
-  //   background-color: $color-white;
-  //   color: black;
-  //   box-shadow: 0 8px 16px $color-dark-white;
-  // }
-
-  // &:active {
-  //   box-shadow: 0 4px 8px $color-dark-white;
-  // }
 }
 
 .btn-header {

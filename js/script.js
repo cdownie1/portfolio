@@ -7,6 +7,7 @@ const contactSection = document.querySelector('#contact');
 const projectBtn = document.querySelector('.btn-header__project');
 const arrowBtn = document.querySelector('.scroll');
 const formLabels = document.querySelectorAll('.contact label');
+const contactBtnAbout = document.querySelector('.contact-btn');
 
 const homeBtn = document.querySelector('.nav__main-link-home');
 const aboutBtn = document.querySelector('.nav__main-link-about');
@@ -29,15 +30,22 @@ document
   });
 
 //smooth scroll on section buttons
-projectBtn.addEventListener('click', function (e) {
-  e.preventDefault();
+projectBtn.addEventListener('click', function (ev) {
+  ev.preventDefault();
   projectSection.scrollIntoView({
     behavior: 'smooth',
   });
 });
 
-arrowBtn.addEventListener('click', function (e) {
-  e.preventDefault();
+contactBtnAbout.addEventListener('click', function (ev) {
+  ev.preventDefault();
+  contactSection.scrollIntoView({
+    behavior: 'smooth',
+  });
+});
+
+arrowBtn.addEventListener('click', function (ev) {
+  ev.preventDefault();
   aboutSection.scrollIntoView({
     behavior: 'smooth',
   });

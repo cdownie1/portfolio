@@ -488,7 +488,17 @@
         <div class="contact__content">
           <div class="contact__content-form">
             <h3>Drop Me A Message</h3>
-            <form action="#" class="form">
+            <form
+              action="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-check"
+              class="form"
+            >
+              <p class="hidden">
+                <label
+                  >Don’t fill this out if you’re human: <input name="bot-check"
+                /></label>
+              </p>
               <input type="text" id="name" name="name" required />
               <label for="name">Name</label>
 

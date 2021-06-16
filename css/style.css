@@ -399,8 +399,7 @@ h2 {
       height: auto; }
 
 .animate__fadeIn {
-  animation: moveInLeftBig 1s ease-out;
-  opacity: 1; }
+  animation: moveInLeftBig 1s ease-out; }
 
 .header {
   height: 100vh;

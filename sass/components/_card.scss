@@ -169,6 +169,7 @@
 }
 
 .animate__fadeIn {
+    -webkit-animation: dmoveInLeftBig 1s ease-out;
     animation: moveInLeftBig 1s ease-out;
     opacity: 1;
 }

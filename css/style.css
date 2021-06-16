@@ -602,7 +602,7 @@ h2 {
             box-shadow: 0 4px 8px #b1aeae; }
 
 .recaptcha div:first-child {
-  margin: auto; }
+  margin-left: -2rem; }
 
 .footer {
   background-color: #2b2828;

@@ -6,6 +6,22 @@
   box-sizing: inherit;
 }
 
+html {
+
+  @include responsive(tablet-land) {
+    font-size: 100%;
+  }
+
+  @include responsive(phone) {
+    font-size: 50%;
+  }
+
+  // @include responsive(tablet-port) {
+  //   font-size: 100%;
+  // }
+
+}
+
 body {
   box-sizing: border-box;
 }

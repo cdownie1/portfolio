@@ -57,8 +57,13 @@
                         margin-bottom: 3rem;
                     }
 
-                    &:last-of-type {
+                    &:not(:first-of-type):not(:last-of-type) {
                         top: 9.9rem;
+                        margin-bottom: 3rem;
+                    }
+
+                    &:last-of-type {
+                        top: 14.9rem;
                         margin-bottom: 3rem;
                     }
 

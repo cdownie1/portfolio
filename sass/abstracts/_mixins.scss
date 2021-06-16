@@ -1,0 +1,55 @@
+//MEDIA QUERIES
+/*
+0-600 - phone
+600-900 - tablet portrait
+900 - 1200 - tablet landscape
+1200+ base styling
+
+@mixin responsive-phone {
+    @media (max-width: 600px) {
+        @content
+    }
+}
+
+
+breakpoint args - 
+phone
+tablet-port
+tablet-land
+desktop
+*/
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint==phone {
+
+        //600px/
+        @media (max-width: 37.5em) {
+
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==tablet-port {
+
+        //900px
+        @media (max-width: 56.25em) {
+
+            @content
+        }
+
+        ;
+    }
+
+
+    @if $breakpoint==tablet-land {
+
+        //1200px
+        @media (max-width: 75em) {
+            @content
+        }
+
+        ;
+    }
+}

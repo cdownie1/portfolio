@@ -158,8 +158,8 @@
 
 .recaptcha {
 
-    // @include responsive(tablet-port) {
-    //     width: 50%;
-    // }
+    @include responsive(tablet-port) {
+        text-align: left;
+    }
 
 }

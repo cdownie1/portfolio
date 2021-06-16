@@ -36,8 +36,6 @@ body {
   box-sizing: border-box; }
   @media (max-width: 56.25em) {
     body {
-      padding: 0;
-      margin: 0;
       overflow-x: hidden; } }
 
 hr {
@@ -597,6 +595,10 @@ h2 {
           .contact__content-form form input:last-child:active {
             transform: scale(1.02);
             box-shadow: 0 4px 8px #b1aeae; }
+
+@media (max-width: 56.25em) {
+  .recaptcha {
+    width: 50%; } }
 
 .footer {
   background-color: #2b2828;

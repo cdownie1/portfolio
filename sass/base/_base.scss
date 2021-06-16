@@ -26,8 +26,6 @@ body {
   box-sizing: border-box;
 
   @include responsive(tablet-port) {
-    padding: 0;
-    margin: 0;
     overflow-x: hidden;
   }
 }

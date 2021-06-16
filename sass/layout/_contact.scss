@@ -150,3 +150,11 @@
     }
 
 }
+
+.recaptcha {
+
+    @include responsive(tablet-port) {
+        width: 50%;
+    }
+
+}

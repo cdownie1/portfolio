@@ -156,10 +156,6 @@
 
 }
 
-.recaptcha {
-
-    @include responsive(tablet-port) {
-        text-align: left;
-    }
-
+.g-recaptcha div:first-child {
+    margin: auto;
 }

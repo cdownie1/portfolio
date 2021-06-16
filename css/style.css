@@ -601,9 +601,8 @@ h2 {
             transform: scale(1.02);
             box-shadow: 0 4px 8px #b1aeae; }
 
-@media (max-width: 56.25em) {
-  .recaptcha {
-    text-align: left; } }
+.g-recaptcha div:first-child {
+  margin: auto; }
 
 .footer {
   background-color: #2b2828;

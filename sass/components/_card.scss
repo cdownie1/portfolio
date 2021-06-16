@@ -6,8 +6,14 @@
     position: relative;
 
     @include responsive(tablet-port) {
-        height: 50rem;
+        height: 29rem;
         width: 58%;
+        margin: 2rem 0;
+    }
+
+    @include responsive(phone) {
+        height: 48rem;
+        width: 75%;
         margin: 2rem 0;
     }
 
@@ -23,6 +29,11 @@
         transition: all 0.6s ease-in;
 
         @include responsive(tablet-port) {
+            height: 29rem;
+            width: 100%;
+        }
+
+        @include responsive(phone) {
             height: 50rem;
             width: 100%;
         }
@@ -35,11 +46,9 @@
 
         &--front {
             background-color: transparent;
-            //   border: 1px solid $color-white;
         }
 
         &--back {
-            //   background-color: rgba(44, 42, 42, 0.451);
             background-image: linear-gradient(to right bottom,
                     rgba(36, 34, 34, 0.751),
                     rgba(94, 91, 91, 0.751));
@@ -67,6 +76,16 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include responsive(tablet-port) {
+            margin-top: 2rem;
+            height: 65%;
+        }
+
+        @include responsive(phone) {
+            margin-top: 1rem;
+            height: 67%;
+        }
 
         &--1 {
             background-image: url('../img/foodmap.png');
@@ -108,6 +127,15 @@
     flex-wrap: wrap;
     list-style: none;
     width: 100%;
+
+    @include responsive(tablet-port) {
+        margin-top: 1rem;
+    }
+
+    @include responsive(phone) {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
 
     li {
         width: 18%;

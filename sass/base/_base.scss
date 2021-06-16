@@ -24,6 +24,10 @@ html {
 
 body {
   box-sizing: border-box;
+
+  @include responsive(tablet-port) {
+    overflow-x: hidden;
+  }
 }
 
 hr {

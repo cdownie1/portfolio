@@ -36,6 +36,8 @@ body {
   box-sizing: border-box; }
   @media (max-width: 56.25em) {
     body {
+      padding: 0;
+      margin: 0;
       overflow-x: hidden; } }
 
 hr {
@@ -493,7 +495,6 @@ h2 {
   display: none; }
 
 .contact {
-  height: 100vh;
   width: 100vw;
   padding: 0.2rem;
   display: flex;

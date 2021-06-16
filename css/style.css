@@ -601,8 +601,8 @@ h2 {
             transform: scale(1.02);
             box-shadow: 0 4px 8px #b1aeae; }
 
-.g-recaptcha div:first-child {
-  margin: auto; }
+recaptcha div:first-child {
+  margin-left: auto; }
 
 .footer {
   background-color: #2b2828;

@@ -16,6 +16,8 @@ const contactBtn = document.querySelector('.nav__main-link-contact');
 
 const navCheckbox = document.querySelector('.nav__checkbox');
 
+const cards = document.querySelectorAll('.card');
+
 //nav smooth scrolling
 document
   .querySelector('.nav__main-list')
@@ -49,6 +51,26 @@ arrowBtn.addEventListener('click', function (ev) {
   aboutSection.scrollIntoView({
     behavior: 'smooth',
   });
+});
+
+//Project section - fade in cards.
+
+const cardObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.intersectionRatio > 0)
+        entry.target.classList.add('animate__fadeIn');
+    });
+  },
+  {
+    root: null,
+    threshold: 0.35,
+  }
+);
+
+cards.forEach((card) => {
+  cardObserver.observe(card);
 });
 
 //form label animation

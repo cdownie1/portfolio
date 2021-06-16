@@ -57,6 +57,17 @@ hr {
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes moveInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translateX(-100rem); }
+  80% {
+    opacity: 0.8;
+    transform: translateX(20rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -274,7 +285,8 @@ h2 {
   -moz-perspective: 150rem;
   height: 25rem;
   width: 30%;
-  position: relative; }
+  position: relative;
+  opacity: 0; }
   @media (max-width: 56.25em) {
     .card {
       height: 29rem;
@@ -385,6 +397,10 @@ h2 {
       object-position: center;
       width: 100%;
       height: auto; }
+
+.animate__fadeIn {
+  animation: moveInLeftBig 1s ease-out;
+  opacity: 1; }
 
 .header {
   height: 100vh;
@@ -613,7 +629,6 @@ h2 {
 
 .footer {
   background-color: #2b2828;
-  height: 25vh;
   width: 100vw;
   display: flex;
   flex-direction: column;

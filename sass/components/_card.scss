@@ -4,6 +4,7 @@
     height: 25rem;
     width: 30%;
     position: relative;
+    opacity: 0;
 
     @include responsive(tablet-port) {
         height: 29rem;
@@ -164,4 +165,9 @@
             height: auto;
         }
     }
+}
+
+.animate__fadeIn {
+    animation: moveInLeftBig 1s ease-out;
+    opacity: 1;
 }

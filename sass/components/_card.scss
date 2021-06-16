@@ -12,7 +12,7 @@
     }
 
     @include responsive(phone) {
-        height: 48rem;
+        height: 42rem;
         width: 75%;
         margin: 2rem 0;
     }
@@ -24,6 +24,7 @@
         top: 0;
         left: 0;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
         transition: all 0.6s ease-in;
@@ -34,7 +35,7 @@
         }
 
         @include responsive(phone) {
-            height: 50rem;
+            height: 42rem;
             width: 100%;
         }
 
@@ -84,7 +85,7 @@
 
         @include responsive(phone) {
             margin-top: 1rem;
-            height: 67%;
+            height: 60%;
         }
 
         &--1 {

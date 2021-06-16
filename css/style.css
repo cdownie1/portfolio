@@ -30,7 +30,7 @@ desktop
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 50%; } }
+    font-size: 60%; } }
 
 body {
   box-sizing: border-box; }
@@ -282,7 +282,7 @@ h2 {
       margin: 2rem 0; } }
   @media (max-width: 37.5em) {
     .card {
-      height: 48rem;
+      height: 42rem;
       width: 75%;
       margin: 2rem 0; } }
   .card__side {
@@ -292,6 +292,7 @@ h2 {
     top: 0;
     left: 0;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
     transition: all 0.6s ease-in; }
@@ -301,7 +302,7 @@ h2 {
         width: 100%; } }
     @media (max-width: 37.5em) {
       .card__side {
-        height: 50rem;
+        height: 42rem;
         width: 100%; } }
     .card__side--front, .card__side--back {
       box-shadow: 0 4px 15px #b1aeae;
@@ -332,7 +333,7 @@ h2 {
     @media (max-width: 37.5em) {
       .card__image {
         margin-top: 1rem;
-        height: 67%; } }
+        height: 60%; } }
     .card__image--1 {
       background-image: url("../img/foodmap.png"); }
     .card__image--2 {
@@ -512,6 +513,10 @@ h2 {
     background-color: rgba(241, 243, 245, 0.8);
     border-radius: 3px;
     box-shadow: 0 2rem 4rem #b1aeae; }
+    @media (max-width: 56.25em) {
+      .contact__content {
+        width: 100%;
+        height: 100%; } }
     .contact__content-form {
       width: 60%;
       height: 60%;
@@ -595,10 +600,6 @@ h2 {
           .contact__content-form form input:last-child:active {
             transform: scale(1.02);
             box-shadow: 0 4px 8px #b1aeae; }
-
-@media (max-width: 56.25em) {
-  .recaptcha {
-    width: 50%; } }
 
 .footer {
   background-color: #2b2828;

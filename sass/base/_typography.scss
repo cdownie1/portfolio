@@ -27,12 +27,12 @@ h2 {
 
         @include responsive(tablet-port) {
             letter-spacing: 0;
-            font-size: 3rem;
+            font-size: 3.3rem;
         }
 
         @include responsive(phone) {
             letter-spacing: 0;
-            font-size: 3rem;
+            font-size: 3.3rem;
         }
     }
 
@@ -59,6 +59,10 @@ h2 {
 .about {
     color: $color-black;
     font-size: 1.2rem;
+
+    @include responsive(tablet-port) {
+        font-size: 2rem;
+    }
 
     &__content--skills-box h4 {
         text-align: center;

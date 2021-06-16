@@ -108,11 +108,11 @@ h2 {
   @media (max-width: 56.25em) {
     .heading-primary--main {
       letter-spacing: 0;
-      font-size: 3rem; } }
+      font-size: 3.3rem; } }
   @media (max-width: 37.5em) {
     .heading-primary--main {
       letter-spacing: 0;
-      font-size: 3rem; } }
+      font-size: 3.3rem; } }
 
 .heading-primary--secondary {
   animation: moveInRight 1s ease-out;
@@ -133,6 +133,9 @@ h2 {
 .about {
   color: #0d0e0e;
   font-size: 1.2rem; }
+  @media (max-width: 56.25em) {
+    .about {
+      font-size: 2rem; } }
   .about__content--skills-box h4 {
     text-align: center; }
 
@@ -269,6 +272,11 @@ h2 {
   height: 25rem;
   width: 30%;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: 50rem;
+      width: 58%;
+      margin: 2rem 0; } }
   .card__side {
     height: 25rem;
     width: 100%;
@@ -279,6 +287,10 @@ h2 {
     border-radius: 3px;
     overflow: hidden;
     transition: all 0.6s ease-in; }
+    @media (max-width: 56.25em) {
+      .card__side {
+        height: 50rem;
+        width: 100%; } }
     .card__side--front, .card__side--back {
       box-shadow: 0 4px 15px #b1aeae;
       padding: 1rem; }
@@ -374,20 +386,38 @@ h2 {
     transform: translate(-8%, -8%); }
 
 .about {
-  height: 100vh;
   width: 95vw;
   margin: 0 auto;
   padding: 2%; }
   .about__content {
     display: flex;
     margin-top: 3rem; }
+    @media (max-width: 56.25em) {
+      .about__content {
+        display: flex;
+        flex-direction: column; } }
+    @media (max-width: 37.5em) {
+      .about__content {
+        display: flex;
+        flex-direction: column; } }
     .about__content--text-box, .about__content--skills-box {
       width: 48%;
       height: 100%;
       margin-right: 1%;
       padding: 0.5rem; }
+      @media (max-width: 56.25em) {
+        .about__content--text-box, .about__content--skills-box {
+          width: 100%;
+          margin-right: 0;
+          padding: 0;
+          margin-bottom: 1rem; } }
     .about__content--text-box {
       border-right: 1px solid #b1aeae; }
+      @media (max-width: 56.25em) {
+        .about__content--text-box {
+          order: 2;
+          padding-top: 2rem;
+          border-right: 0; } }
 
 .skills-showcase {
   margin-top: 2rem;
@@ -417,14 +447,20 @@ h2 {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 0.2rem; }
   .projects__container {
-    margin-top: 3rem;
+    height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
+    @media (max-width: 56.25em) {
+      .projects__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 2rem 0; } }
 
 .hidden {
   display: none; }

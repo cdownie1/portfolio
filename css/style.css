@@ -102,7 +102,7 @@ h2 {
   font-weight: 300; }
 
 .heading-primary--main {
-  animation: moveInLeft 1s ease-out;
+  animation: moveInLeft 2s ease-out;
   display: block;
   font-size: 4rem;
   font-weight: 400;
@@ -118,7 +118,7 @@ h2 {
       font-size: 3.3rem; } }
 
 .heading-primary--secondary {
-  animation: moveInRight 1s ease-out;
+  animation: moveInRight 2s ease-out;
   display: block;
   font-size: 2rem;
   font-weight: 300;
@@ -350,6 +350,9 @@ h2 {
         padding: .35rem;
         text-transform: uppercase;
         letter-spacing: 0.1rem; }
+        @media (max-width: 56.25em) {
+          .card__key-features ul li {
+            font-size: 1rem; } }
 
 .card__features-showcase {
   margin-top: 2rem;
@@ -364,7 +367,7 @@ h2 {
       margin-top: 1rem; } }
   @media (max-width: 37.5em) {
     .card__features-showcase {
-      margin-top: 2rem;
+      margin-top: 3rem;
       font-size: 1rem; } }
   .card__features-showcase li {
     width: 18%;
@@ -396,7 +399,7 @@ h2 {
     left: 3rem; }
   .header__logo {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
     padding: 0.5rem;
     border: 1px solid #fff;
     border-radius: 3px;

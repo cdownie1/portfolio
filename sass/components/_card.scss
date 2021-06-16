@@ -114,6 +114,11 @@
                 padding: .35rem;
                 text-transform: uppercase;
                 letter-spacing: 0.1rem;
+
+                @include responsive(tablet-port) {
+                    font-size: 1rem;
+                }
+
             }
         }
     }
@@ -134,7 +139,7 @@
     }
 
     @include responsive(phone) {
-        margin-top: 2rem;
+        margin-top: 3rem;
         font-size: 1rem;
     }
 

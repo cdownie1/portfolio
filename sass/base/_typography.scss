@@ -18,7 +18,7 @@ h2 {
 
 .heading-primary {
     &--main {
-        animation: moveInLeft 1s ease-out;
+        animation: moveInLeft 2s ease-out;
         display: block;
         font-size: 4rem;
         font-weight: 400;
@@ -37,7 +37,7 @@ h2 {
     }
 
     &--secondary {
-        animation: moveInRight 1s ease-out;
+        animation: moveInRight 2s ease-out;
         display: block;
         font-size: 2rem;
         font-weight: 300;

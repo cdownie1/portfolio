@@ -19,7 +19,22 @@
   }
 }
 
+@-webkit-keyframes moveInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translateX(-90%);
+  }
 
+  60% {
+    opacity: 0.7;
+    transform: translateX(20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @keyframes moveInLeftBig {
   0% {

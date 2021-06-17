@@ -292,10 +292,10 @@ h2 {
     transform: scale(1.1); }
 
 .card {
-  perspective: 150rem;
   -webkit-perspective: 150rem;
   -moz-perspective: 150rem;
   -o-perspective: 150rem;
+  perspective: 150rem;
   height: 25rem;
   width: 30%;
   position: relative;
@@ -316,8 +316,11 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
     transition: all 0.6s ease-in; }

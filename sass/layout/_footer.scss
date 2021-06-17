@@ -7,7 +7,9 @@
     align-items: center; //X
     justify-content: space-around; //Y
 
-    &__logo-box {}
+    &__logo-box {
+        margin-top: 1rem;
+    }
 
 
     &__content {
@@ -15,6 +17,7 @@
         display: flex;
         justify-content: right;
         align-items: center;
+        margin-bottom: 1rem;
 
         &-nav {
             margin-right: 20%;

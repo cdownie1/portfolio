@@ -661,11 +661,14 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-around; }
+  .footer__logo-box {
+    margin-top: 1rem; }
   .footer__content {
     width: 80%;
     display: flex;
     justify-content: right;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 1rem; }
     .footer__content-nav {
       margin-right: 20%; }
     .footer__content-nav, .footer__content-copy {
@@ -756,15 +759,15 @@ h2 {
   height: 100vh;
   position: fixed;
   top: 0;
-  right: 0;
+  left: -40%;
   z-index: 1000;
-  opacity: 0;
+  opacity: 1;
   width: 0;
   transition: all 0.7s ease-in-out; }
   .nav__main-list {
     position: absolute;
     top: 50%;
-    right: 50%;
+    left: 70%;
     transform: translate(50%, -50%);
     list-style: none;
     text-align: center; }

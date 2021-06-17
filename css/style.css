@@ -759,7 +759,7 @@ h2 {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -40%;
+  left: -100%;
   z-index: 1000;
   opacity: 1;
   width: 0;
@@ -767,7 +767,7 @@ h2 {
   .nav__main-list {
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 130%;
     transform: translate(50%, -50%);
     list-style: none;
     text-align: center; }
